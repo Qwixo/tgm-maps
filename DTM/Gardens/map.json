@@ -1,0 +1,141 @@
+{
+	"name": "Gardens",
+	"authors": [
+		{"uuid": "dfacf568-6110-4362-809c-6c59c1eb6391", "username": "_Rascal"},
+		{"uuid": "663ec1c0-a87d-49cf-9079-8e0d5b98a74a", "username": "HesAlrightIGuess"},
+		{"uuid": "c78d4660-635a-417c-ad28-b432b6804f6b", "username": "Pndq"}
+	],
+	"version": "1.0.0",
+	"gametype": "DTM",
+	"teams": [
+		{
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
+			"min": 1,
+			"max": 50
+		},
+		{
+			"id": "red",
+			"name": "Red",
+			"color": "red",
+			"min": 1,
+			"max": 50
+		}
+	],
+	"spawns": [
+		{"teams": ["spectators"], "coords": "125.5, 119, 122.5, 90"},
+		{"teams": ["red"], "coords": "67.5, 83, 37.5"},
+		{"teams": ["blue"], "coords": "69.5, 83, 207.5, 180"}
+	],
+	"dtm": {
+		"monuments": [
+			{
+				"name": "Left Wool",
+				"teams": ["red"],
+				"materials": ["red wool"],
+				"region": {
+					"min": "17, 81, 44",
+					"max": "19, 87, 46"
+				},
+				"health": 10
+			},
+			{
+				"name": "Right Wool",
+				"teams": ["red"],
+				"materials": ["red wool"],
+				"region": {
+					"min": "115, 81, 44",
+					"max": "117, 87, 46"
+				},
+				"health": 10
+			},
+			{
+				"name": "Left Wool",
+				"teams": ["blue"],
+				"materials": ["blue wool"],
+				"region": {
+					"min": "117, 81, 198",
+					"max": "119, 87, 200"
+				},
+				"health": 10
+			},
+			{
+				"name": "Right Wool",
+				"teams": ["blue"],
+				"materials": ["blue wool"],
+				"region": {
+					"min": "19, 81, 198",
+					"max": "21, 87, 200"
+				},
+				"health": 10
+			}
+		]
+	},
+	"kits": [
+		{
+			"name": "Default",
+			"items": [
+				{"type": "item", "material": "iron sword", "slot": 0, "unbreakable": true},
+				{"type": "item", "material": "bow", "slot": 1, "unbreakable": true},
+				{"type": "item", "material": "stone axe", "slot": 2, "unbreakable": true},
+				{"type": "item", "material": "oak planks", "slot": 3, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 4, "amount": 64},
+				{"type": "item", "material": "oak planks", "slot": 5, "amount": 64},
+				{"type": "item", "material": "cooked beef", "slot": 8, "amount": 64},
+				{"type": "item", "material": "arrow", "slot": 9, "amount": 24},
+
+				{"type": "item", "material": "leather helmet", "slot": "helmet", "unbreakable": true},
+				{"type": "item", "material": "leather chestplate", "slot": "chestplate", "unbreakable": true},
+				{"type": "item", "material": "chainmail leggings", "slot": "leggings", "unbreakable": true},
+				{"type": "item", "material": "iron boots", "slot": "boots", "unbreakable": true}
+			]
+		}
+	],
+	"itemremove": [
+		"iron sword", "bow", "stone axe", "oak planks", "cooked beef", "arrow", "golden apple",
+		"chainmail leggings", "iron boots",
+		{
+            "type": "leather helmet",
+            "drop": true
+        },
+        {
+            "type": "leather chestplate",
+            "drop": true
+        }
+	],
+	"killstreaks": [
+		{
+			"count": 1,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "golden apple", "amount": 1}
+				]
+			}
+		},
+		{
+			"count": 5,
+			"repeat": true,
+			"actions": {
+				"items": [
+					{"material": "arrow", "amount": 5}
+				]
+			}
+		}
+	],
+	"filters": [
+		{
+			"type": "build", "evaluate": "deny", "teams": ["blue", "red"],
+			"regions": ["blue-spawn-protection", "red-spawn-protection"],
+			"message": "&cYou are not allowed to modify terrain here."
+		},
+		{"type": "enter", "evaluate": "deny", "teams": ["blue"], "regions": ["red-spawn-protection"], "message": "&cYou may not enter the enemy spawn."},
+		{"type": "enter", "evaluate": "deny", "teams": ["red"], "regions": ["blue-spawn-protection"], "message": "&cYou may not enter the enemy spawn."}
+	],
+	"regions": [
+		{"id": "blue-spawn-protection", "type": "cuboid", "min": "59, 0, 209", "max": "79, oo, 197"},
+		{"id": "red-spawn-protection", "type": "cuboid", "min": "57, 0, 47", "max": "77, oo, 35"}
+	],
+	"buildHeight": 108
+}
