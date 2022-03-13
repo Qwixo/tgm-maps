@@ -1,15 +1,15 @@
 {
-	"name": "Concourse: Christmas",
+	"name": "Concourse",
 	"authors": [
 		{"uuid": "3143b9d9-cea7-465f-97fc-8de59fbbb3a4", "username": "DiamondAx"}
 	],
-	"version": "1.0.1",
+	"version": "1.1.0",
 	"gametype": "KOTF",
 	"teams": [
 		{
-			"id": "green",
-			"name": "Green",
-			"color": "dark green",
+			"id": "blue",
+			"name": "Blue",
+			"color": "blue",
 			"min": 1,
 			"max": 20
 		},
@@ -23,7 +23,7 @@
 	],
 	"spawns": [
 		{"teams": ["spectators"], "coords": "3.5,53,-445.5,0"},
-		{"teams": ["green"], "coords": "3.5,8,-442.5,0"},
+		{"teams": ["blue"], "coords": "3.5,8,-442.5,0"},
 		{"teams": ["red"], "coords": "3.5,8,-448.5,180"}
 	],
 	"respawn": {
@@ -81,17 +81,18 @@
 	"itemremove": [
 		"stone sword", "bow",
 		"arrow", "golden carrot", "golden apple",
+		"iron chestplate",
 		{
             "type": "leather helmet",
-            "drop": true
-        },
-        {
-            "type": "iron chestplate",
-            "drop": true
+            "death": true,
+            "drop": true,
+            "spawn": false
         },
         {
             "type": "leather boots",
-            "drop": true
+            "death": true,
+            "drop": true,
+            "spawn": false
         }
 	],
 	"killstreaks": [
@@ -106,6 +107,9 @@
 		}
 	],
 	"filters": [
-		{"type": "build", "evaluate": "deny", "teams": ["green", "red"], "regions": ["global"], "message": "&cYou may not modify the map."}
+		{"type": "build", "evaluate": "deny", "teams": ["blue", "red"], "regions": ["everywhere"], "message": "&cYou may not modify the map."}
+	],
+	"regions": [
+		{"id": "everywhere", "type": "cuboid", "min": "-oo,-oo,-oo", "max": "oo,oo,oo"}
 	]
 }
