@@ -1,68 +1,20 @@
 [{
-        "name": "Nano",
-        "default": true,
-        "shuffle": true,
-        "requirements": {
-            "min": 0,
-            "max": 8
-        },
-        "maps": [
-            "Arctic Ruins",
-            "Covert Fortress",
-            "Creep Slap!",
-            "Cursed Library",
-            "Dead Waters",
-            "Downforce",
-            "Dry Outpost",
-            "Eclipse",
-            "Gelid 2",
-            "Halcyon I",
-            "Itty Bitty",
-            "Limbo II",
-            "Loyalty DTM",
-            "Mini Drought",
-            "North Winds",
-            "Oriental",
-            "Sandstone",
-            "Sarc",
-            "Vertex",
-            "Warlock"
-        ]
-    },
-    {
         "name": "Small",
         "default": true,
         "shuffle": true,
         "requirements": {
-            "min": 9,
-            "max": 14
+            "min": 0,
+            "max": 19
         },
         "maps": [
-            "Ancient Cistern",
-            "Arctic Ruins",
-            "Arizona",
-            "Balloons",
-            "Cargo",
-            "Deepwind Jungle",
+            "Aerial Conquest",
+            "Dead Waters",
             "Desolate Gully",
-            "Downforce",
-            "Fracture",
-            "Fracture DTM",
-            "Halcyon I",
-            "Limbo II",
-            "Loyalty DTM",
-            "Oriental",
-            "Persisto",
-            "Ricco ",
-            "Sandstone",
+            "Sandstone 2",
             "Skylands Reborn",
-            "Stonehenge",
-            "Stronghold",
-            "Sunrise Over Paradise",
             "Twin Peaks",
-            "Vortex",
-            "Warlock DTW",
-            "Warlock"
+            "Vortex"
+
         ]
     },
     {
@@ -70,55 +22,17 @@
         "default": true,
         "shuffle": true,
         "requirements": {
-            "min": 15,
-            "max": 29
+            "min": 6,
+            "max": 30
         },
         "maps": [
-            "Aerial Conquest",
-            "Anasaria",
-            "Ancient Cistern",
             "Arctic 2",
-            "Arizona",
-            "Ascension",
-            "Aureola",
-            "Brisked KOTH",
-            "Cargo",
-            "Castles",
-            "Circulus Turres",
-            "Concourse",
-            "Coral Reef II",
-            "Deepwind Jungle",
-            "Desert Country",
-            "Edotopia",
-            "Electri City",
-            "Formorgar 1",
-            "Gardens",
-            "Golden Gate",
-            "Golden Drought III",
-            "Hallows",
-            "Kyoto",
-            "Long Shot",
-            "Museum",
-            "Orion",
-            "Persisto",
-            "Race For Victory 2",
-            "Rendezvous Redux",
-            "Ricco",
-            "Ring Race",
-            "Sandstone 2",
-            "Senex",
-            "Senex 3",
-            "Stronghold",
-            "SuperCUBE",
-            "TechnoWar",
-            "Templum",
-            "Thrive 2",
-            "Twin Peaks",
-            "Unix",
-            "Village 2",
-            "Volitare  Terras",
-            "Wahiz CTW",
-            "Warlock DTW"
+            "Egypt",
+            "Fossil Canyon",
+            "Oriental",
+            "Riverbank",
+            "Settler's Covert"
+
         ]
     },
     {
@@ -126,61 +40,20 @@
         "default": true,
         "shuffle": true,
         "requirements": {
-            "min": 30,
+            "min": 20,
             "max": 200
         },
         "maps": [
-            "A New Day",
-            "Araxa",
-            "Arctic 2",
-            "Circulus Turres",
-            "Cozy Cove",
-            "Desert Country",
-            "Desert Sanctuary",
-            "Edotopia",
-            "Electri City",
-            "Formorgar 2",
-            "Fourchette",
-            "Gladiator",
-            "Gobi",
-            "Golden Drought III",
-            "Golden Gate",
-            "Green Hill Zone",
-            "Gyrus CTW",
-            "Harvest",
-            "Justice 2",
-            "Long Shot",
-            "Mayan Apocalypse",
-            "Midnight Train",
-            "Museum",
-            "Orion",
-            "Palace CTF",
-            "Quintus",
-            "Race For Victory 2",
-            "Ring Race",
-            "Sandy Paradise",
-            "Sector Six",
-            "Senex",
-            "Senex 3",
-            "TechnoWar",
+            "Hyral Skylands",
+            "Kyoto",
+            "Naval Conquest",
+            "Paddocks",
+            "Proelium",
+            "Stronghold",
             "Templum",
-            "Terrace 2",
-            "Wonderland"
-        ]
-    },
-    {
-        "name": "Infected",
-        "maps": [
-            "Bayview",
-            "Grind",
-            "Lost",
-            "Meltdown",
-            "Neighborhood",
-            "Nuke",
-            "Pier",
-            "Plaza",
-            "Raid",
-            "Yowzer Stadium"
+            "Unix"
+
         ]
     }
+
 ]
