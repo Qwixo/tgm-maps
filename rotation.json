@@ -4,15 +4,18 @@
         "shuffle": true,
         "requirements": {
             "min": 0,
-            "max": 19
+            "max": 20
         },
         "maps": [
+            "Abandoned Castle CTF",
             "Aerial Conquest",
+            "Bulwark",
             "Dead Waters",
             "Desolate Gully",
             "Sandstone 2",
             "Skylands Reborn",
             "Twin Peaks",
+            "Voltage ",
             "Vortex"
 
         ]
@@ -27,11 +30,16 @@
         },
         "maps": [
             "Arctic 2",
+            "Desert Sanctuary",
             "Egypt",
             "Fossil Canyon",
+            "Grassy Mound CTF",
+            "Long Shot",
             "Oriental",
+            "Palace CTF",
             "Riverbank",
-            "Settler's Covert"
+            "Settler's Covert",
+            "SuperCUBE"
 
         ]
     },
@@ -44,13 +52,16 @@
             "max": 200
         },
         "maps": [
+            "Grub CTF",
             "Hyral Skylands",
             "Kyoto",
             "Naval Conquest",
             "Paddocks",
             "Proelium",
+            "Rampant",
             "Stronghold",
             "Templum",
+            "Trenches ",
             "Unix"
 
         ]
